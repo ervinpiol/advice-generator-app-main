@@ -39,7 +39,7 @@ const Advice = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen relative">
+    <div className="flex flex-col items-center  xs:h-full lg:h-screen relative lg:justify-center xs:mt-40 md:mt-72 lg:m-0 gap-20">
       <div className="bg-DarkGrayishBlue relative flex flex-col justify-center items-center gap-8 p-10 pb-16 rounded-xl shadow-xl xs:w-[95%] sm:w-4/5 md:w-2/3 lg:w-1/2 xl:w-[30%]">
         <p className="font-Manrope text-NeonGreen text-sm tracking-[3px]">
           {advice.adviceId ? `ADVICE #${advice.adviceId}` : ""}
@@ -59,7 +59,7 @@ const Advice = () => {
           <img src={IconDice} alt="IconDice" />
         </button>
       </div>
-      <div className="font-Manrope text-LightCyan text-sm tracking-widest absolute bottom-64">
+      <div className="font-Manrope text-LightCyan  tracking-wider text-sm xs:bottom-10 px-6 text-center">
         Challenge by{" "}
         <a
           href="https://www.frontendmentor.io?ref=challenge"
